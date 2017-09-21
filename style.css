@@ -1,5 +1,6 @@
 .imgGallery {
   background-color : #333333;
+  border-radius    : 10px;
   height           : 500px;
   margin           : auto;
   padding-top      : 20px;
@@ -7,13 +8,12 @@
 }
 
 .selectedImg {
-  background-color : blue;
-  height           : 70%;
-  margin           : auto;
-  overflow         : hidden;
-  position         : relative;
-  text-align       : center;
-  width            : 95%;
+  height     : 70%;
+  margin     : auto;
+  overflow   : hidden;
+  position   : relative;
+  text-align : center;
+  width      : 95%;
 }
 
 .mainImg {
@@ -23,12 +23,11 @@
 }
 
 .thumbContainer {
-  background-color : green;
-  height           : 66px;
-  margin           : auto;
-  overflow         : hidden;
-  text-align       : center;
-  width            : 95%;
+  height     : 66px;
+  margin     : auto;
+  overflow   : hidden;
+  text-align : center;
+  width      : 95%;
 }
 
 .imgThumb {
