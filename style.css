@@ -36,3 +36,15 @@
   overflow : hidden;
   width    : 85px;
 }
+
+.popup {
+  cursor:default;
+  display:none;
+  position:absolute;
+  left:25%;
+  top:5%;
+  background-color:grey;
+  height           : 540px;
+  width            : 700px;
+  z-index:50;
+}
