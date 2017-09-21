@@ -1,0 +1,57 @@
+<!DOCTYPE html/>
+<html>
+  <head>
+    <title>
+    Simple Image Gallery
+    </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+<body>
+  <div class="imgGallery">
+    
+    <div class="selectedImg">
+      <img class="mainImg" src="images/tiger.jpg" />
+    </div>
+
+    <br />
+    <div class="thumbContainer">
+      <img class="imgThumb" src="images/city.jpg" />
+      <img class="imgThumb" src="images/deer.jpg" />
+      <img class="imgThumb" src="images/river.jpg" />
+      <img class="imgThumb" src="images/tree.jpg" />
+      <img class="imgThumb" src="images/stars.jpg" />
+    </div>
+  </div>
+
+
+
+  <script>
+    $(document).ready(function () {
+      $(".thumbContainer img").on({
+        mouseover: function () {
+          $(this).css({
+            'cursor': 'pointer',
+            'border-color': 'red'
+          });
+        },
+        mouseout: function () {
+          $(this).css({
+            'cursor': 'default',
+            'border-color' : 'grey'
+          });
+        },
+        click : function () {
+            var imageUrl = $(this).attr('src');
+            $('.mainImg').fadeOut(1000, function () {
+              $(this).attr('src', imageUrl);
+            }).fadeIn(1000);
+          }
+      });
+    });
+
+  </script>
+</body>
+</html>

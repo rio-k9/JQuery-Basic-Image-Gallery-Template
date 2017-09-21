@@ -1,0 +1,39 @@
+.imgGallery {
+  background-color : #333333;
+  height           : 500px;
+  margin           : auto;
+  padding-top      : 20px;
+  width            : 700px;
+}
+
+.selectedImg {
+  background-color : blue;
+  height           : 70%;
+  margin           : auto;
+  overflow         : hidden;
+  position         : relative;
+  text-align       : center;
+  width            : 95%;
+}
+
+.mainImg {
+  border    : 3px solid grey;
+  height    : 98%;
+  max-width : 98%;
+}
+
+.thumbContainer {
+  background-color : green;
+  height           : 66px;
+  margin           : auto;
+  overflow         : hidden;
+  text-align       : center;
+  width            : 95%;
+}
+
+.imgThumb {
+  border   : 3px solid grey;
+  height   : 60px;
+  overflow : hidden;
+  width    : 85px;
+}
