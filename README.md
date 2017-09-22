@@ -1,2 +1,5 @@
 # JQuery-Image-Gallery-Guide-
-A simple template for creating an image gallery
+
+master branch --> A template for a popup image gallery. Similar to the one used in my portfolio at www.riokarim.com.
+
+simpleGallery branch --> A template for a simple and static image gallery.
